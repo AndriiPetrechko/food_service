@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "KayakSans_Light";
+    src: url('../fonts/Kayak\ Sans\ Light.otf');
+}
+@font-face {
+    font-family: "KayakSans_Bold";
+    src: url('../fonts/Kayak\ Sans\ Bold.otf');
+}
+@font-face {
+    font-family: "KayakSans";
+    src: url('../fonts/Kayak\ Sans\ Regular.otf');
+}
+
+body{
+    background-color: #fff;
+}
+
+/* style for header */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/header_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header_bg_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 1;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1570px;
+}
+.header_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    padding-top: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+.main_btn{
+    background-color: #5fb709;
+    color: #fff;
+    padding: 15px 32px 11px 28px;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "KayakSans_Bold";
+    transition: all .3s;
+}
+.main_btn:active{
+    transform: translateY(10px);
+}
+.header_content_wrapper{
+    margin-top: 154px;
+    width: 30%;
+    position: relative;
+}
+.onion_img{
+    position: absolute;
+    right: -200px;
+    top: 200px;
+    z-index: 4;
+}
+
+.main_title{
+    color: #000;
+    font-size: 50px;
+    font-family: "KayakSans_Bold";
+    line-height: 70px;
+}
+.header_title_strong{
+    color: #5fb709;
+    font-weight: 900;
+}
+.header_row__text{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #313131;
+    font-family: "KayakSans";
+    font-size: 21px;
+}
+@media screen and (max-device-width:1500px){
+    .onion_img{
+        right: -110px;
+        top: 250px;
+    }
+}
+@media screen and (max-device-width:1024px){
+    .onion_img{
+        right: 0;
+        top: 250px;
+        width: 25%;
+    }
+    .header_bg_img img{
+        width: 75%;
+    }
+    .header_content_wrapper{
+        margin-top: 75%;
+        text-align: center;
+    }
+    .main_title{
+        font-size: 75px;
+    }
+    .header_row__text{
+        font-size: 31px;
+    }
+    .header_content_wrapper{
+        margin-top: 154px;
+        width: 100%;
+    }
+}
+@media screen and (max-device-width:840px){
+    .header_bg_img img{
+        width: 100%;
+    }
+    .header_content_wrapper{
+        margin-top: 50%;
+        text-align: center;
+    }
+    .main_title{
+        font-size: 50px;
+    }
+    .header_row__text{
+        font-size: 21px;
+    }
+    .nav{
+        padding-top: 15px;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media screen and (max-device-width:500px){
+    .main_title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .header_row__text{
+        font-size: 18px;
+    }
+    .onion_img{
+       width: 25%;
+    }
+}
+/* end style for header*/
+
+/* style for second page*/
+.second_page{
+    width: 100%;
+}
+.second_page__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.second_page_header_img{
+    padding-right: 250px;
+}
+.second_page_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.second_p_item2{
+    width: 43%;
+    margin-top: 95px;
+    margin-left: 135px;
+}
+.second_p_form{
+    margin-top: 65px;
+}
+.delivery_field{
+   padding: 28px 270px 28px 35px;
+   border-radius: 9px;
+   border: 1px solid #9b9a9a;
+   font-size: 16px;
+}
+.delivery_field:focus{
+    border-radius: 9px;
+    border: 1px solid #9b9a9a;
+}
+@media screen and (max-device-width:1200px){
+    .second_page_content{
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .second_p_item2{
+        width: 75%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .second_p_item1 img{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-device-width:640px){
+    .second_p_item1{
+        text-align: center;
+    }
+    .second_p_item1 img{
+        width: 75%;
+    }
+    .second_p_item2{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .delivery_field{
+        padding: 18px 0 18px 35px;
+    }
+    .second_page__header{
+        justify-content: center;
+    }
+    .second_page_header_img{
+        padding-right: 0;
+    }
+    
+}
+/* end style for second page*/
