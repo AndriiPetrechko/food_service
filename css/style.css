@@ -32,11 +32,17 @@ body{
     text-align: right;
     z-index: 1;
 }
+.header_bg_img img{
+    width: 100%;
+}
 
 .container{
     margin: 0 auto;
     width: 100%;
     max-width: 1570px;
+}
+.right_col_header{
+    padding-right: 0;
 }
 .header_content{
     position: absolute;
@@ -47,8 +53,8 @@ body{
     width: 100%;
     height: 100vh;
 }
-.header_content .container{
-    height: 100vh;
+.header_content_row{
+    margin-top: 150px;
 }
 .nav{
     padding-top: 48px;
@@ -71,18 +77,6 @@ body{
 .main_btn:active{
     transform: translateY(10px);
 }
-.header_content_wrapper{
-    margin-top: 154px;
-    width: 30%;
-    position: relative;
-}
-.onion_img{
-    position: absolute;
-    right: -200px;
-    top: 200px;
-    z-index: 4;
-}
-
 .main_title{
     color: #000;
     font-size: 50px;
@@ -100,68 +94,25 @@ body{
     font-family: "KayakSans";
     font-size: 21px;
 }
-@media screen and (max-device-width:1500px){
-    .onion_img{
-        right: -110px;
-        top: 250px;
+@media screen and (max-device-width: 992px){
+    .main_title{
+        line-height: 50px;
+    }
+    .header_content_row{
+        text-align: center;
     }
 }
-@media screen and (max-device-width:1024px){
+@media screen and (max-device-width: 768px){
     .onion_img{
-        right: 0;
-        top: 250px;
         width: 25%;
-    }
-    .header_bg_img img{
-        width: 75%;
-    }
-    .header_content_wrapper{
-        margin-top: 75%;
-        text-align: center;
-    }
-    .main_title{
-        font-size: 75px;
-    }
+    } 
     .header_row__text{
-        font-size: 31px;
-    }
-    .header_content_wrapper{
-        margin-top: 154px;
-        width: 100%;
-    }
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }   
 }
-@media screen and (max-device-width:840px){
-    .header_bg_img img{
-        width: 100%;
-    }
-    .header_content_wrapper{
-        margin-top: 50%;
-        text-align: center;
-    }
-    .main_title{
-        font-size: 50px;
-    }
-    .header_row__text{
-        font-size: 21px;
-    }
-    .nav{
-        padding-top: 15px;
-        margin: 0 auto;
-        width: 90%;
-    }
-}
-@media screen and (max-device-width:500px){
-    .main_title{
-        font-size: 40px;
-        line-height: 40px;
-    }
-    .header_row__text{
-        font-size: 18px;
-    }
-    .onion_img{
-       width: 25%;
-    }
-}
+
+
 /* end style for header*/
 
 /* style for second page*/
@@ -240,37 +191,5 @@ body{
 /* end style for second page*/
 
 /* style for the third page*/
-.third_page{
-    width: 100%;
-    height: 100vh;
-    background-image: url('../img/local_restaurant_bg.png');
-    background-repeat: no-repeat;
-    position: relative;
-}
-.first_layer_third_page{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-.second_layer_third_page{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-}
-.third_p_content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-}
-.third_p_content_wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 260px;
-    margin-bottom: 300px;
-}
+
 /* end atyle for the third page*/
