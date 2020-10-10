@@ -47,7 +47,9 @@ body{
     width: 100%;
     height: 100vh;
 }
-
+.header_content .container{
+    height: 100vh;
+}
 .nav{
     padding-top: 48px;
     display: flex;
@@ -236,3 +238,39 @@ body{
     
 }
 /* end style for second page*/
+
+/* style for the third page*/
+.third_page{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/local_restaurant_bg.png');
+    background-repeat: no-repeat;
+    position: relative;
+}
+.first_layer_third_page{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.second_layer_third_page{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.third_p_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.third_p_content_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 260px;
+    margin-bottom: 300px;
+}
+/* end atyle for the third page*/
