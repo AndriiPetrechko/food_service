@@ -234,7 +234,6 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-    animation: load_place_order 2s ease-out;
 }
 .fourth_p_img3{
     position: absolute;
@@ -267,14 +266,6 @@ body{
         position: absolute;
         right: 0;
         bottom: 0;
-    }
-}
-@keyframes load_place_order{
-    0%{
-        left: -500px;
-    }
-    100%{
-        left: 0;
     }
 }
 /* end style for the fourth section */
