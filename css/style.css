@@ -146,6 +146,9 @@ body{
     max-height: 70px;
 }
 @media screen and (max-device-width:640px){
+    .second_p_second_r_img{
+        width: 75%;
+    }
    .second_p_container{
        text-align: center;
    }
@@ -208,14 +211,70 @@ body{
         text-align: center;
     }
     .smartphone{
-        width: 50%;
+        width: 60%;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .third_p_img1{
-        width: 40%;
-        right: 0;
+        display: none;
     }
     .third_p_img2{
         width: 50%;
     }
  }
 /* end atyle for the third page*/
+
+/* style for the fourth section */
+.fourth_page{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.fourth_p_img1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: load_place_order 2s ease-out;
+}
+.fourth_p_img3{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}
+.fours_p_img2{
+    padding-left: 315px;
+    padding-bottom: 125px;
+}
+.fours_p_img4{
+    margin-top: 155px;
+}
+@media screen and (max-device-width: 992px){
+    .fourth_p_content{
+        text-align: center;
+        margin-top: 300px;
+        margin-bottom: 200px;
+    }
+    .fourth_p_img1{
+        width: 75%;
+    }
+    .fours_p_img2{
+        display: none;
+    }
+    .fours_p_img4{
+        margin-top: 35px;
+    }
+    .fourth_p_img3{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+@keyframes load_place_order{
+    0%{
+        left: -500px;
+    }
+    100%{
+        left: 0;
+    }
+}
+/* end style for the fourth section */
