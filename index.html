@@ -53,28 +53,41 @@
     <!-- end header -->
 
     <section class="second_page">
-        <div class="container">
+        <div class="container second_p_container">
 
-            <header class="second_page__header">
-                <img class="second_page_header_img" src="img/find_food_img2.png" alt="leaf">
+            <header class="row">
+                <div class="col-lg-10 text-lg-right text-sm-center">
+                    <img class="second_p_first_row_img" src="img/find_food_img2.png" alt="leaf">
+                </div>
+                <div class="col-lg-2"></div>
             </header>
 
-            <div class="second_page_content">
-                <div class="second_p_item1">
-                    <img src="img/find_food_img1.png" alt="find_food">
+            <div class="row">
+                <div class="col-lg-5 text-sm-center text-lg-left">
+                    <img class="second_p_second_r_img" src="img/find_food_img1.png" alt="find_food">
                 </div>
-                <div class="second_p_item2">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 text-sm-center text-lg-left">
                     <div class="main_title">
                         Discover restaurant that <span class="header_title_strong"> deliver near your </span>
                     </div>
                     <div class="second_p_form">
                         <form>
-                            <input class="delivery_field" type="text" name="delivery_address" placeholder="Enter your delivery address">
-                            <button class="main_btn" type="submit"> Find Food </button>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <input type="text" class="delivery_field" name="delivery_address" id="formGroupExampleInput" placeholder="Enter your delivery address">
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="main_btn find_food" type="submit"> Find Food </button>
+                                </div>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
+                <div class="col-lg-1"></div>
             </div>
+            
         </div>
     </section>
     
