@@ -321,7 +321,7 @@ body{
     margin-top: -15%;
     width: 100%;
     position: relative;
-    background-color: #f8f8fa;  
+    background-color: #fff;  
     z-index: 1; 
 }
 .get_app_img1{
@@ -401,3 +401,64 @@ body{
     }
 }
 /* end style for the get_app section*/
+
+/* style for services */
+.services{
+    width: 100%;
+    background-image: url('../img/local_restaurant_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.services_wrapper{
+    padding-top: 270px;
+    padding-bottom: 75px;
+}
+.services_title{
+    font-size: 25px;
+    color: #5fb709;
+    font-family: "KayakSans_Bold";
+    margin-top: 23px;
+}
+.services_text{
+    font-size: 15px;
+    color: #303030;
+    margin-top: 40px;
+    font-family: "KayakSans";
+}
+.services_btn{
+    border: none;
+    border-radius: 9px;
+    background-color: #5fb709;
+    color: #fff;
+    padding: 21px 37px;
+    font-family: "KayakSans_Bold";
+    font-size: 25px;
+    margin-top: 35px;
+}
+.services_btn:active{
+    border: none;
+}
+.services_right_item{
+    border-left: 2px solid #d9dadb;
+}
+.services_item{
+    padding: 20px 100px 53px 90px;
+}
+@media screen and (max-device-width:768px){
+    .services_wrapper{
+        text-align: center;
+        margin-top: -100px;
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+    .services_right_item{
+        border-left: none;
+    }
+    .services_item{
+        padding: 20px 0 53px 0;
+    }
+    .services_btn{
+       width: 100%;
+    }
+}
+/* end style for services */
