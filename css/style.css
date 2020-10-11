@@ -234,6 +234,7 @@ body{
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 .fourth_p_img3{
     position: absolute;
@@ -269,3 +270,134 @@ body{
     }
 }
 /* end style for the fourth section */
+
+/* page5 style*/
+.page5{
+    width: 100%;
+    background-image: url('../img/local_restaurant_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+}
+
+.page5_content{
+    padding-top: 245px;
+    padding-bottom: 285px;
+}
+.page5_phone_img{
+    width: 100%;
+}
+.page5_img_1{
+    padding-left: 452px;
+}
+.page5_img_2{
+    padding-left: 140px;
+}
+@media screen and (max-device-width: 992px){
+    .page5_content{
+        padding-top: 150px;
+        padding-bottom: 85px;
+        text-align: center;
+    }
+    .page5_img_2{
+        padding-left: 0;
+        width: 100%;
+    }
+    .page5_img_1{
+        display: none;
+    }
+    .page5_phone_img{
+        width: 50%;
+    }
+}
+@media screen and (max-device-width:768px){
+   
+}
+/* end style for the page5*/
+
+/* get_app section */
+.get_app{
+    margin-top: -15%;
+    width: 100%;
+    position: relative;
+    background-color: #f8f8fa;  
+    z-index: 1; 
+}
+.get_app_img1{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}
+.get_app_img4{
+    position: absolute;
+    left: 2%;
+    top: 15%;
+    z-index: 0;
+    width: 40%;
+}
+.get_app_img3{
+    position: absolute;
+    right: 4%;
+    top: 10%;
+    width: 15%;
+}
+.get_app_img2{
+    width: 124px;
+}
+
+.get_app_content{
+    padding-top: 324px;
+}
+.get_app_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.get_app_title_text{
+    margin-left: 35px;
+}
+.store_btn_group img{
+    width: 30%;
+    margin-top: 85px;
+}
+.get_app_img5{
+    margin-top: 140px;
+    margin-left: 200px;
+    width: 50%;
+}
+@media screen and (max-device-width:992px){
+    .get_app_content{
+        text-align: center;
+    }
+    .get_app_img4{
+        left: 0;
+    }
+}
+@media screen and (max-device-width:768px){
+    .get_app_img5{
+        margin-top: 40px;
+        margin-left: 0;
+        width: 75%;
+    }
+    .get_app_title{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .get_app_title_text{
+        margin-left: 0;
+    }
+    .store_btn_group img{
+        width: 45%;
+        margin-top: 20px;
+    }
+    .get_app_img4{
+        top: 3%;
+        width: 75%;
+    }
+}
+/* end style for the get_app section*/
