@@ -412,18 +412,29 @@ body{
     background-repeat: no-repeat;
 }
 .services_wrapper{
-    padding: 270px 272px 75px 272px;
+    padding: 270px 270px 75px 270px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.service_item{
-    padding-right: 100px;
+.services_item{
+    display: flex;
+    flex-direction: row;
 }
-.services_right_item{
-    border-left: 2px solid #d9dadb;
-    padding-left: 87px;
+.left_services_item{
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+.right_services_item{
+    justify-content: flex-start;
+    padding-left: 90px;
+}
+.services_divider{
+    display: block;
+    width: 2px;
+    height: 400px;
+    background-color: #d9dadb;
 }
 .services_title{
     font-size: 25px;
@@ -450,9 +461,6 @@ body{
 .services_btn:active{
     border: none;
 }
-.services_item{
-    padding: 20px 100px 53px 90px;
-}
 @media screen and (max-device-width:1200px){
     .services_wrapper{
         padding: 270px 50px 75px 50px;
@@ -460,18 +468,7 @@ body{
 }
 @media screen and (max-device-width:992px){
     .services_wrapper{
-        padding: 270px 0 75px 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .service_item{
-        margin-top: 40px;
-        padding-right: 0;
-    }
-    .services_right_item{
-        border-left: none;
-        padding-left: 0;
+        padding: 150px 10px 75px 10px;
     }
     .services_btn{
         width: 100%;
@@ -485,11 +482,42 @@ body{
 }
 
 @media screen and (max-device-width:768px){
+    .services_divider{
+        display: none;
+    }
     .services_wrapper{
+        padding: 150px 0 125px 0;
+        flex-direction: column;
         text-align: center;
-        margin-top: -100px;
-        padding-top: 200px;
-        padding-bottom: 50px;
+    }
+    .left_services_item{
+        justify-content: flex-end;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+    .right_services_item{
+        justify-content: flex-start;
+        margin-top: 30px;
+        padding-left: 0;
     }
 }
 /* end style for services */
+
+/* style for footer */
+.footer{
+    width: 100%;
+    background-color: #262626;
+}
+.footer_empty_head{
+    height: 133px;
+    width: 100%;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.footer_copyright{
+    color: #656565;
+    font-size: 16px;
+    padding-top: 45px;
+    padding-bottom: 23px;
+}
+/* ens style for footer*/
