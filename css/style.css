@@ -54,7 +54,6 @@ body{
     right: 0;
     z-index: 2;
     width: 100%;
-    height: 100vh;
 }
 .header_content_row{
     margin-top: 150px;
@@ -103,16 +102,29 @@ body{
     }
     .header_content_row{
         text-align: center;
+        margin-top: 130px;
     }
 }
 @media screen and (max-device-width: 768px){
     .onion_img{
-        width: 25%;
-    } 
+        margin-top: 10px;
+        width: 30%;
+    }
+    .main_title{
+        font-size: 40px;
+        line-height: 45px;
+    }
     .header_row__text{
         margin-top: 10px;
         margin-bottom: 10px;
-    }   
+        font-size: 15px;
+    } 
+    .header_btn{
+        width: 100%;
+    } 
+    .header_img_onion{
+        text-align: left;
+    } 
 }
 
 
@@ -146,19 +158,34 @@ body{
     font-size: 18px;
     max-height: 70px;
 }
-@media screen and (max-device-width:640px){
+@media screen and (max-device-width:992px){
     .second_p_second_r_img{
-        width: 75%;
+        width: 50%;
     }
-   .second_p_container{
-       text-align: center;
-   }
-   .find_food{
-       max-width: 100%;
-       width: 100%;
-       margin-top: 5px;
-   }
+    .second_page{
+        margin-top: -150px;
+    }
+    .second_p_first_row_img{
+        width: 30%;
+    }
 }
+@media screen and (max-width:768px){
+    .second_p_container{
+        text-align: center;
+    }
+    .find_food{
+        max-width: 100%;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-height:600px){
+    .second_page{
+        margin-top: 50px;
+    }
+}
+
 /* end style for second page*/
 
 /* style for the third page*/
@@ -257,7 +284,7 @@ body{
         margin-bottom: 200px;
     }
     .fourth_p_img1{
-        width: 75%;
+        width: 60%;
     }
     .fours_p_img2{
         display: none;
@@ -297,8 +324,11 @@ body{
     padding-left: 140px;
 }
 @media screen and (max-device-width: 992px){
+    .page5{
+        margin-top: -150px;
+    }
     .page5_content{
-        padding-top: 150px;
+        padding-top: -75px;
         padding-bottom: 85px;
         text-align: center;
     }
@@ -314,7 +344,15 @@ body{
     }
 }
 @media screen and (max-device-width:768px){
-   
+   .track_food_wrapper{
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: center;
+       align-items: center;
+   }
+   .page5_img_2{
+    width: 90%;
+   }
 }
 /* end style for the page5*/
 
@@ -407,7 +445,7 @@ body{
 /* style for services */
 .services{
     width: 100%;
-    background-image: url('../img/local_restaurant_bg.png');
+    background-image: url('../img/services_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -486,7 +524,7 @@ body{
         display: none;
     }
     .services_wrapper{
-        padding: 150px 0 125px 0;
+        padding: 200px 0 55px 0;
         flex-direction: column;
         text-align: center;
     }
