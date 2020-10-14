@@ -551,11 +551,100 @@ body{
     width: 100%;
     border-bottom: 1px solid #3d3d3d;
 }
-
+.footer_wrapper{
+    margin-top: 40px;
+}
 .footer_copyright{
     color: #656565;
     font-size: 16px;
     padding-top: 45px;
     padding-bottom: 23px;
+}
+.select_lang_group{
+    padding: 8px 0 8px 0;
+    border-bottom: 1px solid #3d3d3d;
+    width: 230px;
+}
+#lang{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 17px;
+    padding-right: 75px;
+    cursor: pointer;
+}
+select:focus option{
+    background-color: #3d3d3d;
+    color: #fff;
+}
+select:focus option:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.social_icons{
+    color: #fff;
+    margin-top: 30px;
+}
+.fab{
+    padding-right: 25px;
+    font-size: 28px;
+}
+a{
+    color: #fff;
+}
+a:hover{
+    color: #5fb709;
+    text-decoration: none; 
+}
+.footer_about_item{
+    line-height: 50px;
+    font-family: "KayakSans_Light";
+    font-size: 20px;
+}
+.footer_btn_title{
+    color: #fff;
+    font-family: "KayakSans_Light";
+    font-size: 20px;
+}
+.footer_download_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.footer_store_btn{
+    margin-top: 35px;
+}
+@media screen and (max-device-width:1200px){
+    .footer_menu_blog{
+        display: none;
+    }
+}
+@media screen and (max-device-width:1024px){
+    .footer_empty_head{
+        height: 33px;
+    }
+    .footer_wrapper{
+        text-align: center;
+    }
+    .footer_download_btn{
+        justify-content: center;
+        align-items: center;
+    }
+    .select_lang_group{
+        width: 100%;
+    }
+    .social_icons{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+    .fab{
+        padding: 0 25px 0 25px;
+    }
+    ul{
+        padding-left: 0;
+    }
 }
 /* ens style for footer*/
